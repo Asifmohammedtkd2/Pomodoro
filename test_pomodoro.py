@@ -15,5 +15,9 @@ def test_10_minutes_left():
     mins=15
     secs=0
     assert display(start,mins,secs) == "10 minutes left"
-
+def test_Time_up_display():
+    start=6*60
+    mins=6
+    secs=0
+    assert display(start,mins,secs) == 'Time up!'
     

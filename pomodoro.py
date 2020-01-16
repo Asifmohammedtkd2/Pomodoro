@@ -16,7 +16,9 @@ def display(start,mins,secs):
     if mins == 30 and secs ==0:
            return "Work! 25 minutes"
     elif mins == 15 and secs == 0:
-           return "10 minutes left"   
+           return "10 minutes left"
+    elif mins ==6 and secs ==0: 
+           return "Time up!"
    
 if __name__== "__main__":
     for t in range(30*60,0,-1):
