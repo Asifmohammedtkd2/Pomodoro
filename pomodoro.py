@@ -8,21 +8,18 @@ def pomodoro(time1):
     #time.sleep(1)
     return [mins,secs]
 
-def reminder(start,mins,secs):
-    return "Work! 25 minutes"
+def display(start,mins,secs):
+    t=start
+    clock=pomodoro(t)
+    mins=clock[0]
+    secs=clock[1]
+    if mins == 30 and secs ==0:
+           return "Work! 25 minutes"
+   
 if __name__== "__main__":
     for t in range(30*60,0,-1):
-       clock=pomodoro(t)
-       if clock[0] == 30:
-           print("Work! 25 minutes")
-       elif clock[0] == 15 and clock[1] == 0:
-           print("10 minutes left")
-       elif clock[0]==5 and clock[1]==1:
-           print("TimeUp")
-       elif clock[0]==5 and clock[1]==0:
-           print("Rest! 5 minutes")
-       elif clock[0]==0 and clock[1]==1:
-           print("Time up!")
+       dis=display(t,0,0)
+       print(dis)
 
 
 
