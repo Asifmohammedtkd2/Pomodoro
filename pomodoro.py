@@ -8,6 +8,8 @@ def pomodoro(time1):
     #time.sleep(1)
     return [mins,secs]
 
+def reminder(start,mins,secs):
+    return "Work! 25 minutes"
 if __name__== "__main__":
     for t in range(30*60,0,-1):
        clock=pomodoro(t)
