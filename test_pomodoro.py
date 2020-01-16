@@ -9,6 +9,11 @@ def test_work_25_reminder():
     mins=30
     secs=0
     assert display(start,mins,secs) == "Work! 25 minutes"
-    
+
+def test_10_minutes_left():
+    start=15*60
+    mins=15
+    secs=0
+    assert display(start,mins,secs) == "10 minutes left"
 
     
