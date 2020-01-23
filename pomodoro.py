@@ -17,3 +17,12 @@ def work(seconds):
            return "10 minutes left"
        elif mins%5==0:
            return "."
+       
+def rest(seconds):
+    if seconds%60==0:
+        one_min=mins_secs(seconds)
+        if seconds!=None:
+           mins=one_min[0]
+           secs=one_min[1]
+        if mins%1==0:
+            return "."
