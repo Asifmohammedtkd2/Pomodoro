@@ -19,8 +19,10 @@ The Pomodoro Technique is a time management system that encourages people to wor
 
 # Tests
 To Test:
-        ```pytest test_pomodoro.py ```
+        
+        pytest test_pomodoro.py 
         
 To check coverage of these tests:
-    ```pytest test_pomodoro.py --cov-report=html --cov=pomodoro -vv ```
+    
+        pytest test_pomodoro.py --cov-report=html --cov=pomodoro -vvv
 
