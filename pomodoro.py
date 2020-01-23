@@ -1,11 +1,12 @@
 import time
 from sys import argv
-def mins_secs(seconds):
+def mins_secs(seconds, delay = 300):
+        "Splits `seconds` into minutes and seconds"
         mins=seconds//60
         secs=0
         # timeformat = '{:02d}:{:02d}'.format(mins, secs)
         # print(timeformat)
-        time.sleep(300)
+        # time.sleep(delay)
         return [mins,secs]
             
 def work(seconds):
