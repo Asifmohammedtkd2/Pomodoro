@@ -1,4 +1,5 @@
 import time
+from sys import argv
 def mins_secs(seconds):
         mins=seconds//60
         secs=0
@@ -25,10 +26,11 @@ def rest(seconds):
            mins=one_min[0]
            secs=one_min[1]
         if mins%1==0:
-            return "."
+           return "."
 if __name__=="__main__":
-   works,rests=25,5 
-   for i in range(1):
+   works,rests=25,5
+   count=int(argv[1])
+   for i in range(count):
        print("Work!",works,"minutes")
        for seconds in range(works*60,0,-1):
            view_work=work(seconds)
@@ -38,6 +40,7 @@ if __name__=="__main__":
        print("Rest!",rests," minutes")
        for seconds in range(rests*60,0,-1):
            view_rest=rest(seconds)
-           if view_work!=None:
+           if view_rest!=None:
                print(view_rest)
        print("TimeUp")
+

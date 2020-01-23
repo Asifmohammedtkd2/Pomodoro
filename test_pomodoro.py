@@ -1,4 +1,5 @@
-from pomodoro import mins_secs,work,rest
+from pomodoro import mins_secs, work, rest
+#import pdb; pdb.set_trace()
 
 def test_get_mins_and_secs():
     seconds=25*60
@@ -15,3 +16,4 @@ def test_each_five_min_dot_work():
 def test_each_one_min_dot_rest():
     seconds=1*60
     assert rest(seconds) == "."
+
