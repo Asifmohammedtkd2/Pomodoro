@@ -6,5 +6,7 @@ def test_get_mins_and_secs():
 def test_work_print_ten_mins():
     seconds=10*60
     assert work(seconds) == "10 minutes left"
-
+def test_each_five_min_dot_work():
+    seconds=15*60
+    assert work(seconds) == "."
 
