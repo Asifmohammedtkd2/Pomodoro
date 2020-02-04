@@ -6,7 +6,9 @@ The Pomodoro Technique is a time management system that encourages people to wor
   Check ‘requirements.txt’ for dependencies
 
 Install them with:
-pip install -r requirements.txt    
+
+`pip install -r requirements.txt`    
     
 To add more dependencies, use pip and:
-pip freeze > requirements.txt
+
+`pip freeze > requirements.txt`
